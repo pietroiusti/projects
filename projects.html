@@ -1,84 +1,133 @@
-<style>
-  .project {
-      margin-top: 30px;
-      margin-bottom: 30px;
-  }
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d8be3321c4.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+  </head>
 
-<h2>Projects</h2>
+  <body>
+    <div id="header">
+      <div><a href="./about.html">About</a></div>
+      <div><a href="mailto:giulio.pietroiusti@gmail.com"
+	      style="text-decoration: none; color: grey;"><i class="far fa-envelope fa-1x
+								    fa-spin"
+							     style="color: grey"></i></a></div>
+    </div>
 
-<div class="project">
-  <div class="image"></div>
-  <div class="name">Game of Life</div>
-   <div class="descr">Conway's Game of Life. Implemented using
-  components. Based on
-  Haverbeke's <a href="https://eloquentjavascript.net/19_paint.html">Eloquent
-  Javascript's pixel editor.</a></div>
-  <div class="technologies">JavaScript</div>
-  <div class="libraries">No libraries used</div>
-  <div class="project-url"><a href="https://glptrst.github.io/canvas_life/life.html">Link</a></div>
-  <div class="git"><a href="https://github.com/glptrst/canvas_life">GitHub</a></div>
-</div>
+    <h2>Projects</h2>
 
-<div class="project">
-  <div class="image"></div>
-  <div class="name">Multiplayer Tic Tac Toe</div>
-   <div class="descr"></a></div>
-  <div class="technologies">JavaScript Node.js websockets</div>
-  <div class="libraries">ws</a></div>
-  <div class="project-url"><a href="https://multiplayer-tictactoe.herokuapp.com/">Link</a></div>
-  <div class="git"><a href="https://github.com/glptrst/multiplayer-tic-tac-toe">github</a></DIV>
-</div>
+    <div id="projectList">
+      <div>
+	<div class="project">
+	  <div class="image"></div>
+	  <div class="name">janus-key | <a href="https://github.com/pietroiusti/janus-key"><i class="fa-brands fa-github"></i></a></div>
+	  <div class="shortDescription">A key remapper for GNU/Linux that
+	    provides keys with a double function.</div>
+	  <div class="technologies">C</div>
+	  <!-- <div class="git"><a href="https://github.com/pietroiusti/janus-key">github</a></div> -->
+	  <div class="longDescription">I am a daily Emacs user and
+	    using Emacs means a persistent usage of modifiers; not the
+	    best treatment for your hands. To improve ergonomics I
+	    came up with the idea of turning normal keys into
+	    modifiers <i>only when
+	    pressed down</i>, keeping their original functionality
+	    when tapped. janus-key allows to assign keys two
+	    functions, one when tapped, and another when held down and
+	    used in combination with other keys. As far as I know,
+	    janus-key is
+	    the first piece of software of its kind that it's both
+	    graphical interface independent — besides X,
+	    it works on Wayland, and on the tty — and systemd
+	    independent. I first implemented <a href="https://github.com/pietroiusti/xtramodifiers"> this idea in python</a>,
+	    but it was too good an opportunity to write my first
+	    “real” C program (To learn C I have also read the iconic <i>K&R</i>. <a href="https://github.com/pietroiusti/The_C_Programming_Language">Here</a>
+	    are my solutions of the exercises).</div>
+	</div>
+      </div>
 
-<div class="project">
-  <div class="image"></div>
-  <div class="name">Multiplayer Chess</div>
-   <div class="descr"></a></div>
-  <div class="technologies">Node.js WebSocket</div>
-  <div class="libraries">chess.js chessboard.js ws</a></div>
-  <div class="project-url"><a href="https://multi-player-chess.herokuapp.com/">Link</a></div>
-  <div class="git"><a href="https://github.com/glptrst/chess">GitHub</a></div>
-</div>
+      <div>
+	<div class="project">
+	  <div class="image"></div>
+	  <div class="name">Freelosophy | <a href="https://freelosophy.github.io"><i class="fa-solid fa-link"></i></a> |
+	    Private Repo (Ask me for the code!)</div>
+	  <div class="shortDescription">A commenting platform for
+	    philosophy academic papers. <a href="https://dailynous.com/2022/01/10/new-site-for-publicly-commenting-on-philosophy-papers/">Here</a> is a recent article about it.</div>
+	  <div class="technologies">Node.js ⸱ Express.js ⸱ EJS ⸱ Google App-Engine & DataStore</div>
+	  <div class="longDescription">A friend wasn't happy about the
+	    major internet archive for philosophy pre-prints and
+	    papers lacking the possibility of commenting. I realized
+	    that we could fill that gap ourselves. We could just
+	    prompt the user for the paper-id, using it to ask the
+	    archive API for — or perhpas scrape? — the paper data,
+	    display the data to the user, and allow the user to store
+	    and retreive comments in a database. It turned out that
+	    there was no archive API, so I had to scrape the
+	    data. <!-- Something I've learned: cursor pagination; using a
+		       html parser, rather than regular expressions, makes your
+		       scraping life way easier. --></div>
+	</div>
+      </div>
 
-<div class="project">
-  <div class="image"></div>
-  <div class="name">Chatty</div>
-   <div class="descr">A WebSocket based chat</div>
-  <div class="technologies">JavaScript WebSocket</div>
-  <div class="libraries">ws</a></div>
-  <div class="project-url"><a href="">https://chat-ty-chat.herokuapp.com</a></div>
-  <div class="git"><a href="https://github.com/glptrst/chatty">GitHub</a></div>
-</div>
+      <div>
+	<div class="project">
+	  <div class="image"></div>
+	  <div class="name">Canvas Life | <a href="https://pietroiusti.github.io/canvas_life/life.html"><i class="fa-solid fa-link"></i></a>
+	    | <a href="https://github.com/pietroiusti/canvas_life"><i class="fa-brands fa-github"></i></a></div>
+	  <div class="shortDescription">Conway's Game of Life. Built
+	    with canvas and components.</div>
+	  <div class="technologies">JavaScript ⸱ Canvas</div>
+	  <div class="longDescription">
+	    Marijn Haverbeke, in his <i>Eloquent Javascript</i>,
+	    builds a pixel editor based on components, without using
+	    libraries like React. That code was the perfect ground for
+	    implementing a Conway's Game of Life. The project allowed
+	    me to familiarize with Canvas, basic grid computations and
+	    component-based thinking. <!-- Something I have learned: you don't need a
+			   two-dimension array to represent a grid. -->
+	  </div>
+	</div>
+      </div>
 
-<div class="project">
-  <div class="image"></div>
-  <div class="name">Voting App</div>
-   <div class="descr"></a></div>
-  <div class="technologies">JavaScript Node.js MongoDB</div>
-  <div class="libraries">ejs express mongoose</div>
-  <div class="project-url"><a href="https://peaceful-crag-42657.herokuapp.com/">Link</a></div>
-  <div class="git"><a href="https://github.com/glptrst/voting-app">GitHub</a></div>
-</div>
+      <div>
+	<div class="project">
+	  <div class="image"></div>
+	  <div class="name">Multiplayer Chess | <a href="https://multi-player-chess.herokuapp.com/"><i class="fa-solid fa-link"></i></a> | <a href="https://github.com/pietroiusti/chess"><i class="fa-brands fa-github"></i></a></div>
+	  <div class="shortDescription"></a>A toy project to familiarize with WebSockets.</div>
+	  <div class="technologies">Node.js ⸱ WebSocket</div>
+	  <div class="longDescription">
+	    A basic multiplayer chess I wrote when I started playing with
+	    websockets. Both logic and GUI are handled by using external
+	    libraries (chess.js and chessboard.js).
+	  </div>
+	</div>
+      </div>
 
-<div class="project">
-  <div class="image"></div>
-  <div class="name">Getinstapic</div>
-  <div class="descr"></a></div>
-  <div class="technologies">JavaScript</div>
-  <div class="libraries"></div>
-  <div class="project-url"><a href="">Link</a></div>
-  <div class="git"><a href="">GitHub</a></div>
-</div>
+      <div>
+	<div class="project">
+	  <div class="image"></div>
+	  <div class="name">React Chat | <a href="https://reactchatchat.herokuapp.com/"><i class="fa-solid fa-link"></i></a> | <a href="https://github.com/pietroiusti/react-chat"><i class="fa-brands fa-github"></i></a></div>
+	  <div class="shortDescription">A no-frills WebSocket chat in React</div>
+	  <div class="technologies">React ⸱ WebSocket</div>
+	  <div class="longDescription">
+	  </div>
+	</div>
+      </div>
 
-<div class="project">
-  <div class="image"></div>
-  <div class="name">Electrpic</div>
-   <div class="descr"></a></div>
-  <div class="technologies">JavaScript Electron</div>
-  <div class="libraries">electron</div>
-  <div class="project-url"><a href=""></a></div>
-  <div class="git"><a href="https://github.com/glptrst/electrpic"></a></div>
-</div>
-
-<h2>Book Exercises</h2>
+      <div>
+	<div class="project">
+	  <div class="image"></div>
+	  <div class="name">InstaPic | <a href="https://github.com/pietroiusti/electrpic"><i class="fa-brands fa-github"></i></a></div>
+	  <div class="shortDescription">An Mac OS app for downloading pictures from
+	    Instagram.</a></div>
+	  <div class="technologies">JavaScript ⸱ Electron</div>
+	  <div class="longDescription">
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
+    background-color: #fffbd6;
+}
+
+a {
+    text-decoration: none;
+    color: #2aa198;
+}
+
+#header {
+    text-align: center;
+    font-weight: bold;
+}
+
+#header div{
+    display: inline;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h2 {
+    text-align: center;
+}
+
+#projectList {
+    width: 70%;
+    margin: auto;
+}
+
+.project {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.name{
+    font-weight: bold;
+    text-align: center;
+}
+
+.shortDescription {
+    font-size: 16px;
+}
+
+.technologies {
+    font-weight: bold;
+    color: 	#cb4b16;/*#560b5e;*/
+}
