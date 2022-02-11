@@ -22,14 +22,19 @@ a:hover {
 }
 
 #header {
-    text-align: center;
+    text-align: right;
     font-weight: bold;
+    margin-right: 4%;
 }
 
 #header div{
     display: inline;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 2%; 
+    margin-right: 2%; 
+}
+
+#envelope {
+    vertical-align:middle;
 }
 
 h2 {
@@ -42,31 +47,52 @@ hr {
 }
 
 #projectList {
-    width: 70%;
+    width: 80%;
+    max-width: 1000px;
     margin: auto;
 }
 
 .project {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
 }
 
 .name{
     font-weight: bold;
     text-align: center;
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
 }
 
-.thumbnail{
-    text-align: center;
-    margin: auto;
+/* .thumbnail { */
+/*     margin: auto; */
+/* } */
+
+.left {
+    flex: 40%;
+    /* margin-top: 3%; */
+}
+
+.right {
+    margin-left: 3%;
+    /* margin-top: 5%; */
+}
+
+.longDescription {
+    flex: 60%;
+    float: right;
 }
 
 .shortDescription {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1%;
 }
 
 .technologies {
+    text-align: center;
     font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
     color: 	#cb4b16;/*#560b5e;*/
 }

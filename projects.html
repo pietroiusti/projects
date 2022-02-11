@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <title>Giulio Pietroiusti's Programming Projects</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d8be3321c4.js" crossorigin="anonymous"></script>
 
@@ -12,8 +14,8 @@
   <body>
     <div id="header">
       <div><a href="./about.html">About</a></div>
-      <div><a href="mailto:giulio.pietroiusti@gmail.com"
-	      style="text-decoration: none; color: grey;"><i class="far fa-envelope fa-1x""></i></a></div>
+      <div id="envelope"><a href="mailto:giulio.pietroiusti@gmail.com"
+	      style="text-decoration: none; color: grey;"><i class="far fa-envelope fa-1x"></i></a></div>
     </div>
 
     <h2>Projects</h2>
@@ -21,28 +23,34 @@
     <div id="projectList">
       <div>
 	<div class="project">
-	  <div class="name">janus-key | <a href="https://github.com/pietroiusti/janus-key"><i class="fa-brands fa-github"></i></a></div>
-	  <div class="thumbnail"><img src="./janus-key.png" width=""320" height="180" /></div>
-	  <div class="shortDescription">A key remapper for GNU/Linux that
-	    provides keys with a double function.</div>
-	  <div class="technologies">C</div>
-	  <!-- <div class="git"><a href="https://github.com/pietroiusti/janus-key">github</a></div> -->
-	  <div class="longDescription">I am a daily Emacs user and
-	    using Emacs means a persistent usage of modifiers; not the
-	    best treatment for your hands. To improve ergonomics I
-	    came up with the idea of turning normal keys into
-	    modifiers only when pressed down, keeping their original
-	    functionality when tapped. janus-key allows to assign keys
-	    two functions, one when tapped, and another when held down
-	    and used in combination with other keys. As far as I know,
-	    janus-key is
-	    the first piece of software of its kind that it's both
-	    graphical interface independent — besides X,
-	    it works on Wayland, and on the tty — and systemd
-	    independent. I first implemented <a href="https://github.com/pietroiusti/xtramodifiers"> this idea in python</a>,
-	    but it was too good an opportunity to write my first
-	    “real” C program (To learn C I have also read the iconic <i>K&R</i>. <a href="https://github.com/pietroiusti/The_C_Programming_Language">Here</a>
-	    are my solutions of the exercises).</div>
+	  <div class="left">
+	    <div class="name">janus-key | <a href="https://github.com/pietroiusti/janus-key"><i class="fa-brands fa-github"></i></a></div>
+	    <div class="technologies">C</div>
+	    <div class="thumbnail"><img src="./janus-key.png" width="320" height="180" alt="janus-key" /></div>
+	  </div>
+
+	  <div class="right">
+	    <div class="shortDescription">A key remapper for GNU/Linux
+	      that provides keys with a double function.
+	    </div>	    
+	    <div class="longDescription">I am a daily Emacs user and
+	      using Emacs means a persistent usage of modifiers; not
+	      the best treatment for your hands. To improve ergonomics
+	      I came up with the idea of turning normal keys into
+	      modifiers only when pressed down, keeping their original
+	      functionality when tapped. janus-key allows to assign
+	      keys two functions, one when tapped, and another when
+	      held down and used in combination with other keys. As
+	      far as I know, janus-key is the first piece of software
+	      of its kind that it's both graphical interface
+	      independent — besides X, it works on Wayland, and on the
+	      tty — and systemd independent. I first implemented <a href="https://github.com/pietroiusti/xtramodifiers"> this idea in python</a>,
+	      but it was too good an opportunity to write my first
+	      “real” C program (To learn C I have also read the iconic <i>K&R</i>. <a href="https://github.com/pietroiusti/The_C_Programming_Language">Here</a>
+	      are my solutions of the exercises).
+	    </div>
+	  </div>
+
 	</div>
       </div>
 
@@ -50,44 +58,28 @@
 
       <div>
 	<div class="project">
-	  <div class="name">Freelosophy | <a href="https://freelosophy.github.io"><i class="fa-solid fa-link"></i></a> |
-	    Private Repo (Ask me for the code!)</div>
-	  <div class="thumbnail"><img src="./freelosophy.png" width=""320" height="180" /></div>
-	  <div class="shortDescription">A commenting platform for
-	    philosophy academic papers. <a href="https://dailynous.com/2022/01/10/new-site-for-publicly-commenting-on-philosophy-papers/">Here</a> is a recent article about it.</div>
-	  <div class="technologies">Node.js ⸱ Express.js ⸱ EJS ⸱ Google App-Engine & DataStore</div>
-	  <div class="longDescription">My friend Filippo wasn't happy
-	    about the major internet archive for philosophy papers
-	    lacking the possibility of commenting. I realized that we
-	    could fill that gap ourselves. We could just prompt the
-	    user for the paper-id, using it to ask the archive API for
-	    — or perhpas scrape? — the paper data, display the data to
-	    the user, and allow the user to store and retreive
-	    comments in a database. It turned out that the archive did
-	    not have a API... <!-- Something I've learned: cursor pagination; using a
-		       html parser, rather than regular expressions, makes your
-		       scraping life way easier. --></div>
-	</div>
-      </div>
+	  <div class="left">
+	    <div class="name">Freelosophy | <a href="https://freelosophy.github.io"><i class="fa-solid fa-link"></i></a> |
+	      Private Repo (Ask me for the code!)</div>
+	    <div class="technologies">Node.js ⸱ Express.js ⸱ EJS ⸱ Google App-Engine & DataStore</div>
+	    <div class="thumbnail"><img src="./freelosophy.png" width="320" height="180" alt="freelosophy" /></div>
+	  </div>
 
-      <hr>
-
-      <div>
-	<div class="project">
-	  <div class="name">Canvas Life | <a href="https://pietroiusti.github.io/canvas_life/life.html"><i class="fa-solid fa-link"></i></a>
-	    | <a href="https://github.com/pietroiusti/canvas_life"><i class="fa-brands fa-github"></i></a></div>
-	  <div class="thumbnail"><img src="./canvas-life.png" width=""320" height="180" /></div>
-	  <div class="shortDescription">Conway's Game of Life. Built
-	    with canvas and components.</div>
-	  <div class="technologies">JavaScript ⸱ Canvas</div>
-	  <div class="longDescription">
-	    Marijn Haverbeke, in his <i>Eloquent Javascript</i>,
-	    builds a pixel editor based on components without using
-	    any library. That code was the perfect ground for
-	    implementing a Conway's Game of Life. The project allowed
-	    me to familiarize with Canvas, basic grid computations and
-	    component-based thinking. <!-- Something I have learned: you don't need a
-					   two-dimension array to represent a grid. -->
+	  <div class="right">
+	    <div class="shortDescription">A commenting platform for
+	      philosophy academic papers. <a href="https://dailynous.com/2022/01/10/new-site-for-publicly-commenting-on-philosophy-papers/">Here</a> is a recent article about it.</div>
+	    <div class="longDescription">My friend Filippo wasn't happy
+	      about the major internet archive for philosophy papers
+	      lacking the possibility of commenting. I realized that we
+	      could fill that gap ourselves. We could just prompt the
+	      user for the paper-id, using it to ask the archive API for
+	      — or perhpas scrape? — the paper data, display the data to
+	      the user, and allow the user to store and retreive
+	      comments in a database. It turned out that the archive did
+	      not have a API... <!-- Something I've learned: cursor pagination; using a
+				     html parser, rather than regular expressions, makes your
+				     scraping life way easier. -->
+	    </div>
 	  </div>
 	</div>
       </div>
@@ -96,17 +88,51 @@
 
       <div>
 	<div class="project">
-	  <div class="name">Multiplayer Chess | <a href="https://multi-player-chess.herokuapp.com/"><i class="fa-solid fa-link"></i></a> | <a href="https://github.com/pietroiusti/chess"><i class="fa-brands fa-github"></i></a></div>
-	  <div class="thumbnail"><img src="./multiplayer-chess.png" width=""320" height="180" /></div>
-	  <div class="shortDescription"></a>A toy project I wrote to
-	  learn WebSockets.</div>
-	  <div class="technologies">Node.js ⸱ WebSocket</div>
-	  <div class="longDescription">
-	    A basic multiplayer chess. Logic and GUI are handled,
-	    respectively, by <a href="https://github.com/jhlywa/chess.js">chess.js</a> and <a href="https://chessboardjs.com/">chessboard.js</a>.</div>
+	  <div class="left">
+	    <div class="name">Canvas Life | <a href="https://pietroiusti.github.io/canvas_life/life.html"><i class="fa-solid fa-link"></i></a>
+	      | <a href="https://github.com/pietroiusti/canvas_life"><i class="fa-brands fa-github"></i></a></div>
+	    <div class="technologies">JavaScript ⸱ Canvas</div>
+	    <div class="thumbnail"><img src="./canvas-life.png" width="320" height="180" alt="canvas-life" /></div>
+	  </div>
+	  
+	  <div class="right">
+	    <div class="shortDescription">Conway's Game of Life. Built
+	      with canvas and components.</div>
+	    <div class="longDescription">
+	      Marijn Haverbeke, in his <i>Eloquent Javascript</i>,
+	      builds a pixel editor based on components without using
+	      any library. That code was the perfect ground for
+	      implementing a Conway's Game of Life. The project allowed
+	      me to familiarize with Canvas, basic grid computations and
+	      component-based thinking. <!-- Something I have learned: you don't need a
+					     two-dimension array to represent a grid. -->
+	    </div>
+	  </div>
 	</div>
       </div>
 
+      <hr>
+
+      <div>
+	<div class="project">
+	  <div class="left">
+	    <div class="name">Multiplayer Chess | <a href="https://multi-player-chess.herokuapp.com/"><i class="fa-solid fa-link"></i></a> | <a href="https://github.com/pietroiusti/chess"><i class="fa-brands fa-github"></i></a></div>
+	    <div class="technologies">Node.js ⸱ WebSocket</div>
+	    <div class="thumbnail"><img src="./multiplayer-chess.png" width="320" height="180" alt="multiplayer-chess"/></div>
+	  </div>
+
+	  <div class="right">
+	    <div class="shortDescription">A toy project I wrote to
+	      learn WebSockets.</div>
+	    <div class="longDescription">
+	      A basic multiplayer chess using WeSocket. The user can
+	      join or create a new room. Logic is handled with <a href="https://github.com/jhlywa/chess.js">chess.js</a> and, for the GUI, I have used <a href="https://chessboardjs.com/">chessboard.js</a>
+	      <!-- 
+		   and GUI are handled, respectively, by <a href="https://github.com/jhlywa/chess.js">chess.js</a> and <a href="https://chessboardjs.com/">chessboard.js</a>. -->
+	    </div>   
+	  </div>
+	</div>
+      </div>
       <!-- <hr>
 
 	   <div>
@@ -130,5 +156,6 @@
 	   </div>
 	   </div>
 	   </div> -->
+    </div>
   </body>
 </html>
