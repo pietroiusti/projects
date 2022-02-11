@@ -1,7 +1,7 @@
 body {
     font-family: 'Old Standard TT', serif;
     font-size: 20px;
-    background-color: #fffbd6;
+    background-color: #fff8e8;/*#fffbd6;*/
 }
 
 .far {
@@ -14,7 +14,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #2aa198;
+    color: #178693;/*#2aa198;*/
 }
 
 a:hover {
