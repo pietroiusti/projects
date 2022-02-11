@@ -4,9 +4,21 @@ body {
     background-color: #fffbd6;
 }
 
+.far {
+    color: grey;
+}
+
+.far:hover {
+    color: #cb4b16;
+}
+
 a {
     text-decoration: none;
     color: #2aa198;
+}
+
+a:hover {
+    color: #cb4b16;
 }
 
 #header {
@@ -24,6 +36,11 @@ h2 {
     text-align: center;
 }
 
+hr {
+    /* border-top: 1px solid #cb4b16; */
+    width: 70%;
+}
+
 #projectList {
     width: 70%;
     margin: auto;
@@ -37,6 +54,12 @@ h2 {
 .name{
     font-weight: bold;
     text-align: center;
+    margin-bottom: 2px;
+}
+
+.thumbnail{
+    text-align: center;
+    margin: auto;
 }
 
 .shortDescription {
