@@ -44,6 +44,9 @@ h2 {
 hr {
     /* border-top: 1px solid #cb4b16; */
     width: 70%;
+    border-style: solid;
+    border: none;
+    border-top: 1px solid #ddd;
 }
 
 #projectList {
