@@ -67,12 +67,18 @@ hr {
     /* margin-bottom: 2px; */
 }
 
-/* .thumbnail { */
+.thumbnail {
+    margin: auto;
+    text-align: center;
+}
+
+/* .book { */
 /*     margin: auto; */
 /* } */
 
 .left {
     flex: 40%;
+    /* min-width:300px; */
     /* margin-top: 3%; */
 }
 
@@ -84,12 +90,14 @@ hr {
 .longDescription {
     flex: 60%;
     float: right;
+    max-width: 700px;
 }
 
 .shortDescription {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 1%;
+    max-width: 700px;
 }
 
 .technologies {
@@ -98,4 +106,8 @@ hr {
     margin-top: 2%;
     margin-bottom: 2%;
     color: 	#cb4b16;/*#560b5e;*/
+}
+
+#selfStudy {
+    margin-top: 15%;
 }
