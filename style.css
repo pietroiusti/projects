@@ -111,3 +111,13 @@ hr {
 #selfStudy {
     margin-top: 15%;
 }
+
+#bio {
+    width: 65%;
+    margin: auto;
+}
+
+.bioPar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
