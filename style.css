@@ -49,6 +49,18 @@ hr {
     border-top: 1px solid #ddd;
 }
 
+#selfStudyList {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.selfStudyItem {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
 #projectList {
     width: 80%;
     max-width: 1000px;
@@ -108,10 +120,6 @@ hr {
     color: 	#cb4b16;/*#560b5e;*/
 }
 
-#selfStudy {
-    margin-top: 15%;
-}
-
 #bio {
     width: 65%;
     margin: auto;
@@ -120,4 +128,8 @@ hr {
 .bioPar {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#projectH2 {
+    margin-top: 120px;
 }
